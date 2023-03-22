@@ -16,34 +16,52 @@ const Home: NextPage = (_props: InferGetServerSidePropsType<typeof getServerSide
 
     const techStack = React.useMemo<ListItemProps[]>(() => [
         {
+            name: 'React',
+            description: 'JavaScript Library to create User Interface.',
+            href: 'https://react.dev/',
+            icon: '/assets/react.png'
+        },
+        {
+            name: 'TypeScript',
+            description: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
+            href: 'https://www.typescriptlang.org/',
+            icon: '/assets/ts.png'
+        },
+        {
             name: 'Next.js',
-            description: 'React Framework',
+            description: 'React Framework with built-in Server-Side-Rendering (SSR), and routing system that enable code-splitting ',
             href: 'https://nextjs.org/',
             icon: '/assets/next-logo.png'
         },
         {
-            name: 'Next.js',
-            description: 'React Framework',
-            href: 'https://nextjs.org/',
-            icon: ''
+            name: 'tRPC',
+            description: 'tRPC is a remote procedure call framework that provides a type-safe environment to build APIs for TypeScript and JavaScript-based projects without relying on schema definitions or libraries for code generation.',
+            href: 'https://trpc.io/',
+            icon: '/assets/trpc.png'
         },
         {
-            name: 'Next.js',
-            description: 'React Framework',
-            href: 'https://nextjs.org/',
-            icon: ''
+            name: 'React-hook-form',
+            description: 'Performant, flexible and extensible forms with easy-to-use validation.',
+            href: 'https://react-hook-form.com/',
+            icon: '/assets/react-hook-form.png'
         },
         {
-            name: 'Next.js',
-            description: 'React Framework',
-            href: 'https://nextjs.org/',
-            icon: ''
+            name: 'Zod',
+            description: 'Schema declaration and validation library.',
+            href: 'https://zod.dev/',
+            icon: '/assets/zod.png'
         },
         {
-            name: 'Next.js',
-            description: 'React Framework',
-            href: 'https://nextjs.org/',
-            icon: ''
+            name: 'Playwright',
+            description: 'User end-to-end testing for modern web apps.',
+            href: 'https://playwright.dev/',
+            icon: '/assets/playwright.png'
+        },
+        {
+            name: 'React-testing-library',
+            description: 'a very lightweight solution for unit testing React components.',
+            href: 'https://testing-library.com/docs/react-testing-library/intro/',
+            icon: '/assets/react-testing-library.png'
         }
     ], []);
 

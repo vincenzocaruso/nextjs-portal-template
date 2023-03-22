@@ -7,10 +7,10 @@ const cx = classNames.bind(styles);
 
 export default function ListItem({ href, name, description, icon }: ListItemProps) {
     return (
-        <a href={href} title='name' target='_blank' rel="noreferrer">
+        <a href={href} title={name} target='_blank' rel="noreferrer">
             <div className={cx('container')}>
                 <span className={cx('icon')}>
-                    <Image src={icon} alt={`${name}-logo`} width={64} height={64} />
+                    {icon && <Image src={icon} alt={`${name}-logo`} width={64} height={64} />}
                 </span>
                 <div className={cx('text-container')}>
                     <p className={cx('name')}>{name}</p>
