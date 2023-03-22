@@ -1,5 +1,8 @@
 # UX Portal
 
+## Quick start
+`npx create-next-app my-test --example "https://github.com/vincenzocaruso/nextjs-portal-template"`
+
 ## Project structure
 
 `portal`
