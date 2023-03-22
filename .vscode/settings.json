@@ -1,0 +1,15 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "totalTypeScript.hideAllTips": true,
+    "totalTypeScript.hideBasicTips": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "i18n-ally.defaultNamespace": "common",
+    "i18n-ally.pathMatcher": "{locale}/{namespace}.json",
+    "i18n-ally.dirStructure": "dir",
+    "i18n-ally.localesPaths": ["public/locales"],
+    "i18n-ally.namespace": true,
+    "i18n-ally.enabledFrameworks": ["react", "i18next"]
+}
