@@ -1,7 +1,9 @@
 {
     "UXPortal": "UX Portal",
-    "UXPortalPageDescription": "UX Portal page description placeholder",
-    "Welcome": "Welcome to UX Portal!",
+    "UXPortalPageDescription": "This is a starting point for your new application based on the latest Frontend technology",
+    "Welcome": "This is a starting point for your new application based on the latest Frontend technology",
+    "TechStackTitle": "Tech Stack:",
+    "TechStackDescription": "Here's some useful links to get you started:",
     "Navigation": {
         "Collapse": "Collapse navigation",
         "Expand": "Expand navigation"
