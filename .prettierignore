@@ -1,0 +1,4 @@
+.next
+node_modules
+# Prettier doesn't like the template syntax in the helm charts so just exclude it
+helm

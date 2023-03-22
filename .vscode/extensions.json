@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "deque-systems.vscode-axe-linter",
+        "dbaeumer.vscode-eslint",
+        "lokalise.i18n-ally",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "esbenp.prettier-vscode",
+        "mattpocock.ts-error-translator",
+        // mindaro === Bridge to Kubernetes
+        "mindaro.mindaro",
+        "ms-azuretools.vscode-docker",
+        "ms-playwright.playwright"
+    ]
+}
