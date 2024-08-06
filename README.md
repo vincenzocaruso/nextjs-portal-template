@@ -25,7 +25,7 @@
 
 ### Prerequisites
 
-- Node.js > 16
+- Node.js > 18
 - Make sure that you have access to the Azure Artifacts feed
 
 ## Testing
