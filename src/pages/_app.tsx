@@ -12,15 +12,10 @@ import {
     webLightTheme,
 } from '@fluentui/react-components';
 
-import { api } from '@/utils/api';
 import { appWithTranslation } from 'next-i18next';
 import Shell from '@/components/shell/shell';
 
-import { initializeIcons } from '@fluentui/react';
-
 type EnhancedAppProps = AppProps & { renderer?: GriffelRenderer };
-
-initializeIcons();
 
 const MyApp: AppType = ({ Component, pageProps, renderer }: EnhancedAppProps) => {
     return (
@@ -35,5 +30,4 @@ const MyApp: AppType = ({ Component, pageProps, renderer }: EnhancedAppProps) =>
         </RendererProvider>
     );
 };
-
-export default api.withTRPC(appWithTranslation(MyApp));
+export default appWithTranslation(MyApp);

@@ -1,15 +1,8 @@
-import { z } from 'zod';
+import { env } from '@/env.mjs';
+import type { NextApiHandler } from 'next';
 
-import { createTRPCRouter, publicProcedure } from '../trpc';
+export const versionHandler: NextApiHandler = (_req, res) => {
+    res.status(200).json(env.VERSION);
+};
 
-export const exampleRouter = createTRPCRouter({
-    hello: publicProcedure
-        .input(z.object({
-            text: z.string()
-        }))
-        .query(({ input }) => {
-            return {
-                greeting: `Hello ${input.text}`,
-            };
-        }),
-});
+export default versionHandler;

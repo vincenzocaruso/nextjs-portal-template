@@ -1,25 +1,41 @@
 import type { ReactNode } from 'react';
 import Header from './header';
 import Navigation, { NavItem } from './navigation';
-import classnames from 'classnames/bind';
-
-import styles from './shell.module.scss';
 import { HomeRegular } from '@fluentui/react-icons';
-const cx = classnames.bind(styles);
+import { makeStyles } from '@fluentui/react-components';
 
 interface Props {
     children: ReactNode;
 }
 
+const useStyles = makeStyles({
+    shell: {
+        height: '100vh',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+    },
+    navWorkspaceContainer: {
+        display: 'flex',
+        flexGrow: 1,
+    },
+    shellContentContainer: {
+        height: '100%',
+        width: '100%',
+    },
+});
+
 export default function Shell({ children }: Props) {
+    const { shell, navWorkspaceContainer, shellContentContainer } = useStyles();
+
     return (
-        <div className={cx('shell')} data-testid='shell'>
+        <div className={shell} data-testid='shell'>
             <Header></Header>
-            <div className={cx('nav-workspace-container')}>
+            <div className={navWorkspaceContainer}>
                 <Navigation>
                     <NavItem href='/' icon={HomeRegular} text={'Home'} />
                 </Navigation>
-                <main className={cx('shell-content-container')}>{children}</main>
+                <main className={shellContentContainer}>{children}</main>
             </div>
         </div>
     );
