@@ -1,6 +1,4 @@
 import 'sanitize.css';
-import '@/styles/globals.scss';
-import '@/styles/colors.scss';
 
 import type { AppProps, AppType } from 'next/app';
 import type { GriffelRenderer } from '@fluentui/react-components';
