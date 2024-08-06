@@ -49,13 +49,6 @@ const Home: NextPage = (_props: InferGetServerSidePropsType<typeof getServerSide
                 icon: '/assets/next-logo.png',
             },
             {
-                name: 'tRPC',
-                description:
-                    'tRPC is a remote procedure call framework that provides a type-safe environment to build APIs for TypeScript and JavaScript-based projects without relying on schema definitions or libraries for code generation.',
-                href: 'https://trpc.io/',
-                icon: '/assets/trpc.png',
-            },
-            {
                 name: 'React-hook-form',
                 description: 'Performant, flexible and extensible forms with easy-to-use validation.',
                 href: 'https://react-hook-form.com/',
